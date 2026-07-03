@@ -580,11 +580,28 @@
     padding-top:24px;
     padding-bottom:24px;
     display:flex;
+    align-items:center;
     justify-content:space-between;
     font-size:12px;
     letter-spacing:0.1em;
     color:var(--fg-dim);
     text-transform:uppercase;
+  }
+  .footer-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .footer-brand img{
+    width:28px;
+    height:28px;
+    display:block;
+  }
+  .contact-mascot{
+    display:block;
+    width:120px;
+    height:120px;
+    margin:0 auto 8px;
   }
 
   @media (max-width: 860px){
@@ -804,6 +821,7 @@
   </section>
 
   <section class="contact" id="contact">
+    <img src="assets/mascot-pen.png" alt="spptudio 캐릭터" class="contact-mascot" width="120" height="120">
     <h2 class="contact-title">프로젝트 문의하기</h2>
     <p style="margin:0 auto 24px; text-align:center; max-width:700px; color:#bdbab3; font-size: 16px;">
       메시지나 이메일을 남겨주시면 확인 후 신속하게 답변드리겠습니다.<br>
@@ -833,7 +851,10 @@
 </main>
 
 <footer class="wrap">
-  <span>spptudio © 2026</span>
+  <div class="footer-brand">
+    <img src="assets/mascot-face.png" alt="spptudio 캐릭터" width="28" height="28">
+    <span>spptudio © 2026</span>
+  </div>
   <span>Visual Artist</span>
 </footer>
 
