@@ -140,6 +140,12 @@
   }
   .logo span { color:var(--accent); }
 
+  .logo-img{
+    height:22px;
+    width:auto;
+    display:block;
+  }
+
   .nav-links{ display:flex; gap:36px; align-items:center; }
 
   .nav-links a{
@@ -292,6 +298,32 @@
     font-size:14px;
     color:var(--fg-dim);
     text-align:right;
+  }
+
+  .intro-video-section{
+    display:flex;
+    justify-content:center;
+  }
+
+  .intro-video-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    max-width:360px;
+    width:100%;
+  }
+
+  .intro-video{
+    width:100%;
+    aspect-ratio:9/16;
+    border-radius:20px;
+    border:1px solid var(--line);
+    background:var(--bg-elevated);
+  }
+
+  .intro-video-caption{
+    text-align:center;
   }
 
   .works-grid{
@@ -645,7 +677,7 @@
 
 <header>
   <nav class="nav">
-    <a href="#top" class="logo">SPPTUDIO<span>.</span></a>
+    <a href="#top" class="logo"><img src="icons/logo.png" alt="spptudio" class="logo-img"></a>
     <div class="nav-links">
       <a href="#works">포트폴리오</a>
       <a href="#process">제작과정</a>
@@ -689,6 +721,12 @@
     AI 비주얼 아티스트 spp(스프)가 기획부터 비주얼 디렉팅, AI 이미지 생성, 모션 그래픽, 편집까지 전 과정을 직접 진행하며,<br>
     SNS 숏폼 제작과 AI 뮤직비디오 등 다양한 생성형 AI 콘텐츠 제작 의뢰를 받고 있습니다.
   </p>
+
+  <section class="section sub-section intro-video-section" id="intro-video">
+    <div class="intro-video-wrap">
+      <iframe class="intro-video" src="https://player.vimeo.com/video/1211577844?autoplay=1&muted=1&loop=1&background=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="spptudio | Brand Identity Motion"></iframe>
+    </div>
+  </section>
 
   <section class="section" id="works">
     <div class="section-head">
